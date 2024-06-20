@@ -40,6 +40,24 @@ INSTALLED_APPS = [
     'crudApp',
 ]
 
+
+#==========================================================================
+#==========================================================================
+
+"""
+### --------self note-----another way of adding "AppName" to Installed_apps---External_apps
+D:\sip-\june13-crud\crud-\crudProject\crudProject\settings.py
+"""
+
+EXTERNAL_APPS=[
+    'StudyBud_traversy_app'
+]
+
+INSTALLED_APPS.extend (EXTERNAL_APPS)
+
+#==========================================================================
+#==========================================================================
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
