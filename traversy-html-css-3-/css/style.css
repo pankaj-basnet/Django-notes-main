@@ -36,16 +36,40 @@ img {
 .navbar {
   background: #fff;
   padding: 20px;
+
+  outline: 2px dotted #aaa; outline-offset: -1px;/* ### outline --- delete this after completion of project *** */
+
+  
 }
 
 .navbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  outline: 2px dotted #aaa; outline-offset: -1px;/* ### outline --- delete this after completion of project *** */
+
+
 }
 
 .navbar .main-menu ul {
   display: flex;
+}
+
+.navbar .container .logo{
+  width: 144px; /* better to control height than width --- this cause more height than 44px */
+
+  /* ... adjust my logo's height sn= */
+  height: 44px; /* 44px same as .menu menu ul (( 16px + line height 1.5*16 + padding 10+10 sn= rsn=)) */
+  
+}
+
+/* ...sn */
+.navbar .container .logo img{
+  max-height: 100% ;
+
+  /* ... adjust my logo's height sn= */
+
 }
 
 .navbar ul li a {
@@ -66,6 +90,42 @@ img {
 .navbar ul li:last-child a {
   margin-left: 10px;
 }
+
+/* ================================================================== */
+/* ================================================================== */
+/* ------                       HERO SECTION                       ------ */
+
+.hero {
+  margin-bottom: 50px;
+
+  outline: 2px dotted #aaa; outline-offset: -1px;/* ### outline --- delete this after completion of project *** */
+
+  
+}
+
+.hero .container {
+  background: url('../images/hero-bg.png') no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  height: 550px;
+
+
+  outline: 2px dotted #aaa; outline-offset: -1px;/* ### outline --- delete this after completion of project *** */
+
+  
+}
+
+.hero .hero-content {
+  width: 70%;
+}
+
+.hero .hero-text {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+
+
 
 /* ===================================================================
 ===================================================================
@@ -120,4 +180,44 @@ img {
 .btn-block {
   display: block;
   width: 100%;
+}
+
+/* Text Classes */
+.text-xxl {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 40px 0 20px;
+}
+
+.text-xl {
+  font-size: 2.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 40px 0 20px;
+}
+
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 30px 0 20px;
+}
+
+.text-md {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 20px 0 10px;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  font-weight: normal;
+  margin: 10px 0 5px;
+}
+
+.text-center {
+  text-align: center;
 }
